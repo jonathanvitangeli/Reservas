@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Cabañas Tigre</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reservar una Cabaña</h1>
+        <form id="reservaForm">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="fechaInicio">Fecha de Inicio</label>
+            <input type="date" id="fechaInicio" name="fechaInicio" required>
+
+            <label for="fechaFin">Fecha de Fin</label>
+            <input type="date" id="fechaFin" name="fechaFin" required>
+
+            <label for="cabania">Seleccionar Cabaña</label>
+            <select id="cabania" name="cabania" required>
+                <option value="">Seleccionar...</option>
+                <option value="1">Cabaña 1</option>
+                <option value="2">Cabaña 2</option>
+                <option value="3">Cabaña 3</option>
+            </select>
+
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="montoTotal">Monto Total de la Estadía</label>
+            <input type="number" id="montoTotal" name="montoTotal" step="0.01" required>
+
+            <label for="comentarios">Comentarios Adicionales</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
